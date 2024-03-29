@@ -1,0 +1,215 @@
+{
+	"info": {
+		"_postman_id": "1bb903e8-9680-40a6-8bc8-d3e0df2a7982",
+		"name": "postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "33360283-1bb903e8-9680-40a6-8bc8-d3e0df2a7982"
+	},
+	"item": [
+		{
+			"name": "/",
+			"item": [
+				{
+					"name": "List API versions",
+					"id": "d5cf2efa-daaf-4cdc-8d6b-9c1c01067d04",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "1555881f-7824-4906-b5ea-d0a74a30b689",
+							"name": "200 response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"examples\": {\n    \"foo\": {\n      \"value\": {\n        \"versions\": [\n          {\n            \"status\": \"CURRENT\",\n            \"updated\": \"2011-01-21T11:33:21Z\",\n            \"links\": [\n              {\n                \"href\": \"http://127.0.0.1:8774/v2/\",\n                \"rel\": \"self\"\n              }\n            ]\n          },\n          {\n            \"status\": \"EXPERIMENTAL\",\n            \"updated\": \"2013-07-23T11:33:21Z\",\n            \"links\": [\n              {\n                \"href\": \"http://127.0.0.1:8774/v3/\",\n                \"rel\": \"self\"\n              }\n            ]\n          }\n        ]\n      }\n    }\n  }\n}"
+						},
+						{
+							"id": "1c11720f-c318-4016-8bf1-e66e63094445",
+							"name": "300 response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										""
+									]
+								}
+							},
+							"status": "Multiple Choices",
+							"code": 300,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"examples\": {\n    \"foo\": {\n      \"value\": \"{\\n \\\"versions\\\": [\\n       {\\n         \\\"status\\\": \\\"CURRENT\\\",\\n         \\\"updated\\\": \\\"2011-01-21T11:33:21Z\\\",\\n         \\\"id\\\": \\\"v2.0\\\",\\n         \\\"links\\\": [\\n             {\\n                 \\\"href\\\": \\\"http://127.0.0.1:8774/v2/\\\",\\n                 \\\"rel\\\": \\\"self\\\"\\n             }\\n         ]\\n     },\\n     {\\n         \\\"status\\\": \\\"EXPERIMENTAL\\\",\\n         \\\"updated\\\": \\\"2013-07-23T11:33:21Z\\\",\\n         \\\"id\\\": \\\"v3.0\\\",\\n         \\\"links\\\": [\\n             {\\n                 \\\"href\\\": \\\"http://127.0.0.1:8774/v3/\\\",\\n                 \\\"rel\\\": \\\"self\\\"\\n             }\\n         ]\\n     }\\n ]\\n}\\n\"\n    }\n  }\n}"
+						}
+					]
+				}
+			],
+			"id": "c3526e18-2b1f-4781-b801-fb01374d5d92"
+		},
+		{
+			"name": "v2",
+			"item": [
+				{
+					"name": "Show API version details",
+					"id": "e08c2050-de95-4978-a74e-9abd659cea2d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/v2",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v2"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "0d05920c-2425-4b0f-8d37-a76465faaf56",
+							"name": "200 response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v2",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "null"
+						},
+						{
+							"id": "6db0313e-0f42-4dbc-ad65-49963011bf36",
+							"name": "203 response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v2",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v2"
+									]
+								}
+							},
+							"status": "Non-Authoritative Information (since HTTP/1.1)",
+							"code": 203,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "null"
+						}
+					]
+				}
+			],
+			"id": "2646376d-12ca-4f39-8703-1198c19213ea"
+		}
+	],
+	"variable": [
+		{
+			"id": "ca7c64b2-b779-456d-b22f-dbff420e2a0e",
+			"key": "baseUrl",
+			"value": "/"
+		}
+	]
+}
