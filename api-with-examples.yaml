@@ -99,6 +99,10 @@ paths:
                               "type": "application/vnd.openstack.compute+xml;version=2"
                           },
                           {
+                              "base1": "application/xml",
+                              "type1": "application/vnd.openstack.compute+xml;version=2"
+                          },
+                          {
                               "base": "application/json",
                               "type": "application/vnd.openstack.compute+json;version=2"
                           }
